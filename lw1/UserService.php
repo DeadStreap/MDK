@@ -6,11 +6,8 @@ class UserService {
         usort($users, function($a, $b) use ($direction) {
             if ($direction === 'asc') {
                 return strcmp($a->username, $b->username);
-            } else {
-                return strcmp($b->username, $a->username);
             }
         });
-        
         return $users;
     }
     
@@ -18,8 +15,6 @@ class UserService {
         usort($users, function($a, $b) use ($direction) {
             if ($direction === 'asc') {
                 return $a->birthday <=> $b->birthday;
-            } else {
-                return $b->birthday <=> $a->birthday;
             }
         });
         
