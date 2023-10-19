@@ -24,6 +24,20 @@ displayUsersByUsername($sortedByUsername);
 echo '<br>';
 displayUsersByBirthday($sortedByBirthday);
 
+echo '<br>';
+echo '<br>';
+
+// SortByNameReverse
+$sortedByUsername = UserService::sortByUsername($users, 'desc');
+
+// SortByBirthdayReverse
+$sortedByBirthday = UserService::sortByBirthday($users, 'desc');
+
+// ShowUsersArray
+displayUsersByUsername($sortedByUsername);
+echo '<br>';
+displayUsersByBirthday($sortedByBirthday);
+
 // ShowByUsername
 function displayUsersByUsername($users) {
     echo "Usernames (ByUsername): <br>";
