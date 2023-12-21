@@ -5,7 +5,7 @@ class User
     public $password;
     public $birthday;
 
-    public function __construct(string $username, string $password, DateTime $birthday)
+    public function __construct(string $username, string $password, DateTimes $birthday)
     {
         $this->username = $username;
         $this->password = $password;
