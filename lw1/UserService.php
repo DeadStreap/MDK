@@ -3,7 +3,7 @@ require_once 'User.php';
 
 class UserService
 {
-    public static function sortByUsername($users, $direction)
+    public static function sortByUsername(array $users, string $direction)
     {
         usort($users, function ($a, $b) use ($direction) {
             if ($direction === 'asc') {
@@ -16,7 +16,7 @@ class UserService
         return $users;
     }
 
-    public static function sortByBirthday($users, $direction)
+    public static function sortByBirthday(array $users, string $direction)
     {
         usort($users, function ($a, $b) use ($direction) {
             if ($direction === 'asc') {
