@@ -39,7 +39,8 @@ echo '<br>';
 displayUsersByBirthday($sortedByBirthday);
 
 // ShowByUsername
-function displayUsersByUsername($users) {
+function displayUsersByUsername($users)
+{
     echo "Usernames (ByUsername): <br>";
     foreach ($users as $user) {
         echo "Name: " . $user->getUsername() . ", Birthday: " . $user->getBirthday()->format('Y-m-d');
@@ -48,7 +49,8 @@ function displayUsersByUsername($users) {
 }
 
 // ShowByBirthday
-function displayUsersByBirthday($users) {
+function displayUsersByBirthday($users)
+{
     echo "Birthdays (ByBirthday): <br>";
     foreach ($users as $user) {
         echo "Name: " . $user->getUsername() . ", Birthday: " . $user->getBirthday()->format('Y-m-d');
