@@ -16,7 +16,7 @@ class UserService
         return $users;
     }
 
-    public static function sortByBirthday(array $users, string $direction)
+    public static function sortByBirthday(array $users, $direction)
     {
         usort($users, function ($a, $b) use ($direction) {
             if ($direction === 'asc') {
