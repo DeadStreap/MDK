@@ -1,15 +1,14 @@
 <?php
-require 'vendor/autoload.php';
+namespace PizzaStore;
 
-use PizzaStore\PizzaStore;
-require 'pizza/CheesePizza.php';
-require 'pizza/VeggiePizza.php';
-require 'pizza/PepperoniPizza.php';
-require 'pizza/MexicanPizza.php';
+require '../vendor/autoload.php';
+
+use Lw3\Library\PizzaStore;
+use Lw3\Library\Pizza;
 
 class MyPizzaStore extends PizzaStore
 {
-    public function createPizza($type)
+    public function createPizza($type): Pizza
     {
         if ($type === 'cheese') {
             return new CheesePizza('Cheese Sauce', ['Extra cheese', 'Romano ', 'Ricotta ']);

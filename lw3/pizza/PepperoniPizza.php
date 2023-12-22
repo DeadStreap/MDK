@@ -1,5 +1,10 @@
 <?php
-require_once 'Pizza.php';
+
+namespace PizzaStore;
+
+require '../vendor/autoload.php';
+
+use Lw3\Library\Pizza;
 
 class PepperoniPizza extends Pizza
 {

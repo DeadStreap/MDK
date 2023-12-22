@@ -6,5 +6,11 @@
         "psr-4": {
           "PizzaStore\\": "pizza/"
         }
-      }
+      },
+      "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DeadStreap/lw3Lib"
+        }
+    ]
 }
